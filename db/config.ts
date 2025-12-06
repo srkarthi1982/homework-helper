@@ -1,6 +1,14 @@
-import { defineDb } from 'astro:db';
+import { defineDb } from "astro:db";
+import {
+  HomeworkRequests,
+  HomeworkResponses,
+  HomeworkJobs,
+} from "./tables";
 
-// https://astro.build/db/config
 export default defineDb({
-  tables: {}
+  tables: {
+    HomeworkRequests,
+    HomeworkResponses,
+    HomeworkJobs,
+  },
 });
